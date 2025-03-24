@@ -1,0 +1,138 @@
+/* General Styles */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f5f5f5;
+    color: #333;
+    margin: 0;
+    padding: 0;
+}
+
+/* Navbar */
+.navbar {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Hero Section */
+.hero {
+    background: url('images/hero.jpg') no-repeat center center/cover;
+    color: white;
+    text-align: center;
+    padding: 100px 0;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+/* Page Titles */
+h2 {
+    text-align: center;
+    font-weight: bold;
+    margin-top: 20px;
+}
+
+/* Bootstrap Cards */
+.card {
+    border: none;
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+.card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+/* Timeline Styling */
+.timeline {
+    position: relative;
+    margin: 50px auto;
+    padding-left: 20px;
+    border-left: 3px solid #007bff;
+    max-width: 600px;
+}
+
+.timeline-item {
+    position: relative;
+    margin-bottom: 20px;
+    padding-left: 20px;
+}
+
+.timeline-date {
+    font-weight: bold;
+    color: #007bff;
+}
+
+.timeline-content {
+    background: #f8f9fa;
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Modal Styling */
+.modal-content {
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 10px;
+    background: #222;
+    color: white;
+}
+
+/* Dark Mode */
+.dark-mode {
+    background-color: #121212;
+    color: white;
+}
+
+.dark-mode .navbar, 
+.dark-mode .footer {
+    background-color: #1c1c1c;
+}
+
+.dark-mode .card, 
+.dark-mode .timeline-content {
+    background: #333;
+    color: white;
+}
+
+.dark-mode .timeline {
+    border-left: 3px solid #ffc107;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .hero {
+        padding: 50px 0;
+    }
+
+    .timeline {
+        max-width: 100%;
+    }
+
+    .card {
+        margin-bottom: 20px;
+    }
+}
+/* Fade-in animation */
+.fade-in {
+    opacity: 0;
+    transform: translateY(30px);
+    transition: opacity 2.0s ease-out, transform 0.8s ease-out;
+}
+
+/* When element is in viewport */
+.show {
+    opacity: 1;
+    transform: translateY(0);
+}
+/* Image Hover Zoom */
+.img-hover-zoom {
+    transition: transform 1.0s ease-in-out;
+}
+
+.img-hover-zoom:hover {
+    transform: scale(1.1);
+}
+
